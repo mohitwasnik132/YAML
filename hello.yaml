@@ -1,0 +1,39 @@
+# this is key value pair example
+
+"apple": "I am a red fruit"
+1: "The first digit after 0"
+2: "deux IN FRENCH"
+
+
+# lists
+
+- Bhandara
+- Nagpur
+- Mumbai
+- Pune
+
+
+# blocks
+fruits
+  - apple 
+  - banana
+  - orange
+  - grape
+  - Grape
+
+# Proper indentation
+Cities :
+ - Bhandara
+ - Nagpur
+ - Mumbai
+ - Pune
+
+# Indentation is important 
+# this will produce an error
+fourcities :                  #check@yamllint.com
+  - Bhandara
+- Mumbai
+  - Hydrabad
+  - Chennai 
+  #The above block will produce following error
+  # (<unknown>): could not find expected ':' while scanning a simple key at line 35 column 1 
